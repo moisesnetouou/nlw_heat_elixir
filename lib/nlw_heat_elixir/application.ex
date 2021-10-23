@@ -14,9 +14,10 @@ defmodule NlwHeatElixir.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: NlwHeatElixir.PubSub},
       # Start the Endpoint (http/https)
-      NlwHeatElixirWeb.Endpoint
+      NlwHeatElixirWeb.Endpoint,
       # Start a worker by calling: NlwHeatElixir.Worker.start_link(arg)
       # {NlwHeatElixir.Worker, arg}
+      NlwHeatElixir.Scheduler
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
