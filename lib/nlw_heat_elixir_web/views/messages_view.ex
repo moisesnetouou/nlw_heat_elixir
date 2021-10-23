@@ -1,4 +1,4 @@
-defmodule NlwHeatElixir.MessagesView do
+defmodule NlwHeatElixirWeb.MessagesView do
   use NlwHeatElixirWeb, :view
 
   def render("create.json", %{message: message}) do
